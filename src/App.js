@@ -135,7 +135,7 @@ function App() {
           </div>
             { !canConnectToContract &&
             <i className="is-block">
-              Connect to Ropsten test Network
+              Connect to Ropsten Test Network
             </i>
             }
           <button

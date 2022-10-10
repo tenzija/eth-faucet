@@ -81,7 +81,7 @@ function App() {
     const { contract, web3 } = web3Api
     await contract.addFunds({
       from: account,
-      value: web3.utils.toWei("1", "ether")
+      value: web3.utils.toWei("0.3", "ether")
     })
 
     // window.location.reload() - nice way to reload the page after the tx
@@ -142,7 +142,7 @@ function App() {
           disabled={!canConnectToContract}
           className="button mr-2 is-link is-outlined"
           onClick={addFunds}
-          >Donate 1 ETH</button>
+          >Donate 0.3 ETH</button>
           <button className="button is-primary is-outlined"
           onClick={withdrawFunds}
           disabled={!canConnectToContract}>Withdraw 0.1 ETH</button> 
